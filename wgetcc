@@ -2,9 +2,9 @@ args = {...}
 --APIs
 os.loadAPI("dc")
 --Args
-args[1] = choice
-args[2] = urlOrMultiChoice
-args[3] = fileName
+args[0] = choice
+args[1] = urlOrMultiChoice
+args[2] = fileName
 
 if #args == 0 then
     print("Usage: wgetcc <url or multi> <file name>")
