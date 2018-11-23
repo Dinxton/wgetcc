@@ -10,12 +10,12 @@ if #args == 0 then
     print("Usage: wgetcc <url or multi> <file name>")
 end
 --Changing urlOrMultiChoice to lowercase
-urlOrMultiChoice = string.lower(urlOrMultiChoice)
+--urlOrMultiChoice = string.lower(urlOrMultiChoice)
 --Choices
 githubDinxton = "https://raw.githubusercontent.com/Dinxton/"
 choice_wgetcc = githubDinxton .. "wgetcc/master/wgetcc"
 choice_dcore = githubDinxton .. "dcore/master/dc"
-choice_GetAll = githubDinxton.. "GetAll/master/GetAll"
+choice_GetAll = githubDinxton .. "GetAll/master/GetAll"
 
 --URL program
 if choice == "url" then
