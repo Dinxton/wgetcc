@@ -1,4 +1,4 @@
-os.load("dc")
+os.loadAPI("dc")
 --wgetcc - a client for download ComputerCraft programs from GitHub using wget.
 
 wget()
