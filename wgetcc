@@ -8,6 +8,7 @@ args[3] = fileName
 
 if #args == 0 then
     print("Usage: wgetcc <url or multi> <file name>")
+end
 --Changing urlOrMultiChoice to lowercase
 urlOrMultiChoice = string.lower(urlOrMultiChoice)
 --Choices
