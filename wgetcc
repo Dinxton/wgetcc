@@ -1,4 +1,3 @@
 os.loadAPI("dc")
 --wgetcc - a client for download ComputerCraft programs from GitHub using wget.
-
-wget()
+shell.run("wget", "https://raw.githubusercontent.com/Dinxton/wgetcc/master/LICENSE", "LICENSE")
