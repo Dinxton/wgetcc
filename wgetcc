@@ -1,3 +1,35 @@
+args = {...}
+--APIs
 os.loadAPI("dc")
---wgetcc - a client for download ComputerCraft programs from GitHub using wget.
-shell.run("wget", "https://raw.githubusercontent.com/Dinxton/wgetcc/master/LICENSE", "LICENSE")
+--Args
+args[1] = choice
+args[2] = urlOrMultiChoice
+args[3] = fileName
+
+if #args == 0 then
+    print("Usage: wgetcc <url or multi> <file name>")
+--Changing urlOrMultiChoice to lowercase
+urlOrMultiChoice = string.lower(urlOrMultiChoice)
+--Choices
+githubDinxton = "https://raw.githubusercontent.com/Dinxton/"
+choice_wgetcc = githubDinxton .. "wgetcc/master/wgetcc"
+choice_dcore = githubDinxton .. "dcore/master/dc"
+choice_GetAll = githubDinxton.. "GetAll/master/GetAll"
+
+--URL program
+if choice == "url" then
+    shell.run("wget", urlOrMultiChoice, fileName)
+end
+--Changing multiChoice depending on selection.
+if urlOrMultiChoice == "dcore" then
+    multiChoice = choice_dcore
+elseif urlOrMultiChoice =="wgetcc" then
+    multichoice = choice_wgetcc
+elseif urlOrMultiChoice =="GetAll"
+    multichoice = choice_GetAll
+end
+--Main program
+
+if choice == "multi" then
+    shell.run("wget", multiChoice, fileName)
+end
