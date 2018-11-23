@@ -31,5 +31,10 @@ end
 --Main program
 
 if choice == "multi" then
-    shell.run("wget", multiChoice, fileName)
+    fs.move("/"..fileName, "/wgetccbackup/"..fileName)
+    local ok = pcall(shell.run("wget", multiChoice, fileName))
+    if not ok then
+        print("File retrieval failed.")
+
+    end
 end
