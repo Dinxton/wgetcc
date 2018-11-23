@@ -6,9 +6,9 @@ args[0] = choice
 args[1] = urlOrMultiChoice
 args[2] = fileName
 
-if #args == 0 then
-    print("Usage: wgetcc <url or multi> <file name>")
-end
+--if #args == 0 then
+    --print("Usage: wgetcc <url or multi> <file name>")
+--end
 --Changing urlOrMultiChoice to lowercase
 --urlOrMultiChoice = string.lower(urlOrMultiChoice)
 --Choices
